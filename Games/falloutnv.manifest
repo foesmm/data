@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Game GUID="1E2AF687-B7B7-487D-AE8B-20597C45BFB2"
+      Title="Fallout: New Vegas"
+      ShortTitle="New Vegas"
+      ReleaseYear="2010"
+      ReleaseState="Alpha">
+    <Executable File="FalloutNV.exe" Type="Main">
+        <Checksum>d068f394521a67c6e74fe572f59bd1be71e855f3</Checksum>
+        <Checksum>3980940522f0264ed9af14aea1773bb19f5160ab</Checksum>
+        <Checksum>5394b94a18ffa6fa846e1d6033ad7f81919f13ac</Checksum>
+        <Checksum>07affda66c89f09b0876a50c77759640bc416673</Checksum>
+        <Checksum>f65049b0957d83e61ecccacc730015ae77fb4c8b</Checksum>
+        <Checksum>aca83d5a12a64af8854e381752fe989692d46e04</Checksum>
+        <Checksum>946d2eaba04a75ff361b8617c7632b49f1ede9d3</Checksum>
+        <Checksum>0021023e37b1af143305a61b7b29a1811cc7c5fb</Checksum>
+        <Checksum>37cae4e713b6b182311f66e31668d5005d1b9f5b</Checksum>
+        <Checksum>600cd576cde7746fb2cd152fdd24db97453ed135</Checksum>
+        <Checksum>34b65096caef9374dd6aa39af855e43308b417f2</Checksum>
+    </Executable>
+    <Executable File="FalloutNVLauncher.exe" Type="Launcher"/>
+    <Executable File="Geck.exe" Type="CreationKit">
+        <Download Uri="https://cdn.bethsoft.com/fallout/nv/geck/GECK_NVE_v1.4.zip" Checksum="485720eec5f02ab5ec61b27fa577db1be4dad3c8" />
+        <Download Uri="http://geckwiki.com/images/c/ca/GECK_NVE_v1.4.7z" Checksum="56277a97c48d0601ab359a7e7c6d74eb4221b907"/>
+    </Executable>
+    <Executable File="nvse_loader.exe" Type="ScriptExtender">
+        <Download Uri="http://nvse.silverlock.org/download/nvse_5_1_beta4.7z" Checksum="fb67e62e09660f5978265e91b3ebd6a6a8e913da" />
+    </Executable>
+    <Executable File="FNVEdit.exe" Type="XEdit">
+        <Download Provider="GithubReleases" Uri="TES5Edit/TES5Edit" />
+    </Executable>
+    <Directories>
+        <Data>%Game%/Data</Data>
+        <ScriptExtender>%Game%/Data/nvse/plugins</ScriptExtender>
+        <ApplicationData>%AppData%/FalloutNV</ApplicationData>
+        <Configuration>%Documents%/My Games/FalloutNV</Configuration>
+        <Saves>%Documents%/My Games/FalloutNV/Saves</Saves>
+    </Directories>
+</Game>
