@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Game GUID="CF3AE292-6F28-4617-A6ED-B8107A120A67"
+      Title="Fallout 3"
+      ShortTitle="Fallout 3"
+      ReleaseYear="2008"
+      ReleaseState="Soon">
+    <Executable File="Fallout3.exe" Type="Main" />
+    <Executable File="FalloutLauncher.exe" Type="Launcher"/>
+    <Executable File="Geck.exe" Type="CreationKit" />
+    <Executable File="fosese_loader.exe" Type="ScriptExtender" />
+    <Executable File="FO3Edit.exe" Type="XEdit">
+        <Download Provider="GithubReleases" Uri="TES5Edit/TES5Edit" />
+    </Executable>
+    <Directories>
+        <Data>%Game%/Data</Data>
+        <ScriptExtender>%Game%/Data/fose/plugins</ScriptExtender>
+        <ApplicationData>%AppData%/Fallout3</ApplicationData>
+        <Configuration>%Documents%/My Games/Fallout3</Configuration>
+        <Saves>%Documents%/My Games/Fallout3/Saves</Saves>
+    </Directories>
+</Game>
