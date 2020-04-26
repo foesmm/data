@@ -35,4 +35,25 @@
         <Configuration>%Documents%/My Games/FalloutNV</Configuration>
         <Saves>%Documents%/My Games/FalloutNV/Saves</Saves>
     </Directories>
+    <Plugins>
+        <Plugin Name="FalloutNV.esm" Type="Master" Guid="1E2AF687-B7B7-487D-AE8B-20597C45BFB2" Checksum="2ac6cc085249f1ae">
+            <Archive Name="Fallout - Meshes.bsa" Checksum="198c2d27f57d865a" />
+            <Archive Name="Fallout - Meshes2.bsa" Checksum="d1bfc31aaf63900c" />
+            <Archive Name="Fallout - Misc.bsa" Checksum="94a44b64ce56a14a" />
+            <Archive Name="Fallout - Sound.bsa" Checksum="043128556aa7c157" />
+            <Archive Name="Fallout - Textures.bsa" Checksum="dcb0970aa9ae5bd2" />
+            <Archive Name="Fallout - Textures2.bsa" Checksum="e15dc582a56d97e0" />
+            <Archive Name="Fallout - Voices1.bsa" Checksum="cd6b08352568edd7" />
+        </Plugin>
+        <Plugin Name="DeadMoney.esm" Type="DLC" Guid="F88C19B7-7E4E-4EE0-947D-8E94BE0B17A0" Checksum="ed361d9945e3c3a6" />
+        <Plugin Name="HonestHearts.esm" Type="DLC" Guid="3D5D1E30-059F-4424-A3E2-131E2A77742B" Checksum="bd13d3b8e473a868" />
+        <Plugin Name="OldWorldBlues.esm" Type="DLC" Guid="B2E8C4DC-1527-4EBC-BD31-15B1B5CFCA7D" Checksum="8985cb45da83dc70" />
+        <Plugin Name="LonesomeRoad.esm" Type="DLC" Guid="7AD0D1C1-5D5E-46CF-BEB4-C8E07D8C05A7" Checksum="938a5f88661aef3b" />
+        <Plugin Name="CaravanPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="32457a3d5d0670b5" />
+        <Plugin Name="ClassicPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="28faff8f00849e45"/>
+        <Plugin Name="MercenaryPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="69987927955477d4" />
+        <Plugin Name="TribalPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="310ccb553690211c" />
+        <Plugin Name="GunRunnersArsenal.esm" Type="DLC" Guid="BC918626-568B-4A03-8722-BCD653558850" Checksum="0c17b8ae64184d7e" />
+        <Plugin Name="FalloutNV_lang.esp" Type="Localization" Guid="1E2AF687-B7B7-487D-AE8B-20597C45BFB2" />
+    </Plugins>
 </Game>
