@@ -3,7 +3,8 @@
       Title="Fallout: New Vegas"
       ShortTitle="New Vegas"
       ReleaseYear="2010"
-      ReleaseState="Alpha">
+      ReleaseState="Alpha"
+      Description="Fallout: New Vegas is a post apocalyptic role-playing video game developed by Obsidian Entertainment and published by Bethesda Softworks. While New Vegas is not a direct sequel, it uses the same engine and style as Fallout 3. It is the fourth major installment in the Fallout series (sixth overall). It was developed by a few of the employees who worked on previous Fallout games at Black Isle Studios, along with a larger number of new employees. It is set primarily in a post-apocalyptic Nevada, although some areas of California, Arizona and Utah are also visited.">
     <Executable File="FalloutNV.exe" Type="Main">
         <Checksum>d068f394521a67c6e74fe572f59bd1be71e855f3</Checksum>
         <Checksum>3980940522f0264ed9af14aea1773bb19f5160ab</Checksum>
@@ -19,14 +20,17 @@
     </Executable>
     <Executable File="FalloutNVLauncher.exe" Type="Launcher"/>
     <Executable File="Geck.exe" Type="CreationKit">
-        <Download Uri="https://cdn.bethsoft.com/fallout/nv/geck/GECK_NVE_v1.4.zip" Checksum="485720eec5f02ab5ec61b27fa577db1be4dad3c8" />
-        <Download Uri="http://geckwiki.com/images/c/ca/GECK_NVE_v1.4.7z" Checksum="56277a97c48d0601ab359a7e7c6d74eb4221b907"/>
+        <Download Uri="https://cdn.bethsoft.com/fallout/nv/geck/GECK_NVE_v1.4.zip"
+                  Checksum="485720eec5f02ab5ec61b27fa577db1be4dad3c8"/>
+        <Download Uri="http://geckwiki.com/images/c/ca/GECK_NVE_v1.4.7z"
+                  Checksum="56277a97c48d0601ab359a7e7c6d74eb4221b907"/>
     </Executable>
     <Executable File="nvse_loader.exe" Type="ScriptExtender">
-        <Download Uri="http://nvse.silverlock.org/download/nvse_5_1_beta4.7z" Checksum="fb67e62e09660f5978265e91b3ebd6a6a8e913da" />
+        <Download Uri="http://nvse.silverlock.org/download/nvse_5_1_beta4.7z"
+                  Checksum="fb67e62e09660f5978265e91b3ebd6a6a8e913da"/>
     </Executable>
     <Executable File="FNVEdit.exe" Type="XEdit">
-        <Download Provider="GithubReleases" Uri="TES5Edit/TES5Edit" />
+        <Download Provider="GithubReleases" Uri="TES5Edit/TES5Edit"/>
     </Executable>
     <Directories>
         <Data>%Game%/Data</Data>
@@ -35,25 +39,49 @@
         <Configuration>%Documents%/My Games/FalloutNV</Configuration>
         <Saves>%Documents%/My Games/FalloutNV/Saves</Saves>
     </Directories>
+    <Addons>
+        <Addon Guid="F88C19B7-7E4E-4EE0-947D-8E94BE0B17A0" Title="Dead Money"
+               Description="As the victim of a raw deal, you must work alongside three other captured wastelanders to recover the legendary treasure of the Sierra Madre Casino. In Dead Money, your life hangs in the balance as you face new terrain, foes, and choices. It is up to you how you play your cards in the quest to survive."/>
+        <Addon Guid="3D5D1E30-059F-4424-A3E2-131E2A77742B" Title="Hones Hearts"
+               Description="Honest Hearts takes you on an expedition to the unspoiled wilderness of Utah’s Zion National Park. Things go horribly wrong when your caravan is ambushed by a tribal raiding band. As you try to find a way back to the Mojave, you become embroiled in a war between tribes and a conflict between a New Canaanite missionary and the mysterious Burned Man. The decisions you make will determine the fate of Zion."/>
+        <Addon Guid="B2E8C4DC-1527-4EBC-BD31-15B1B5CFCA7D" Title="Old World Blues"
+               Description="In Old World Blues you'll discover how some of the Mojave's mutated monsters, such as night stalkers and cazadores, came to be when you unwittingly become a human experiment at the hands of five pre-War doctors. You'll need to scour the research centers of Big MT in search of powerful weapons to join forces with them against Dr. Mobius, who seeks to destroy all their experiments - or use the technology to get revenge on them for abducting you. You are the only hope of saving the &quot;Think Tank&quot; and all of Science! - but the question is: is Big MT really what it seems?"/>
+        <Addon Guid="7AD0D1C1-5D5E-46CF-BEB4-C8E07D8C05A7" Title="Lonesome Road"
+               Description="Lonesome Road brings the Courier's story full circle when you are contacted by the original Courier Six, a man by the name of Ulysses who refused to deliver the platinum chip at the start of New Vegas. In his transmission, Ulysses promises the answer as to why, but only if you take one last job—a job that leads you into the depths of the hurricane-swept canyons of The Divide, a landscape torn apart by earthquakes and violent storms. The road to the Divide is a long and treacherous one, and of the few to ever walk the road, none have ever returned."/>
+        <Addon Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Title="Courier's Stash"
+               Description="Players pre-ordering Fallout: New Vegas from selected retailers were granted access to special pre-order bonus packs, containing exclusive equipment to make the earlier stages of the game easier."/>
+        <Addon Guid="BC918626-568B-4A03-8722-BCD653558850" Title="Gun Runners' Arsenal"
+               Description="Gun Runners’ Arsenal, released on September 27, 2011, increases the range of unique weapons, weapon mods, ammunition types and recipes waiting to be uncovered in the vast Mojave Wasteland."/>
+    </Addons>
     <Plugins>
-        <Plugin Name="FalloutNV.esm" Type="Master" Guid="1E2AF687-B7B7-487D-AE8B-20597C45BFB2" Checksum="2ac6cc085249f1ae">
-            <Archive Name="Fallout - Meshes.bsa" Checksum="198c2d27f57d865a" />
-            <Archive Name="Fallout - Meshes2.bsa" Checksum="d1bfc31aaf63900c" />
-            <Archive Name="Fallout - Misc.bsa" Checksum="94a44b64ce56a14a" />
-            <Archive Name="Fallout - Sound.bsa" Checksum="043128556aa7c157" />
-            <Archive Name="Fallout - Textures.bsa" Checksum="dcb0970aa9ae5bd2" />
-            <Archive Name="Fallout - Textures2.bsa" Checksum="e15dc582a56d97e0" />
-            <Archive Name="Fallout - Voices1.bsa" Checksum="cd6b08352568edd7" />
+        <Plugin Name="FalloutNV.esm" Type="Master" Guid="1E2AF687-B7B7-487D-AE8B-20597C45BFB2"
+                Checksum="2ac6cc085249f1ae">
+            <Archive Name="Fallout - Meshes.bsa" Checksum="198c2d27f57d865a"/>
+            <Archive Name="Fallout - Meshes2.bsa" Checksum="d1bfc31aaf63900c"/>
+            <Archive Name="Fallout - Misc.bsa" Checksum="94a44b64ce56a14a"/>
+            <Archive Name="Fallout - Sound.bsa" Checksum="043128556aa7c157"/>
+            <Archive Name="Fallout - Textures.bsa" Checksum="dcb0970aa9ae5bd2"/>
+            <Archive Name="Fallout - Textures2.bsa" Checksum="e15dc582a56d97e0"/>
+            <Archive Name="Fallout - Voices1.bsa" Checksum="cd6b08352568edd7"/>
         </Plugin>
-        <Plugin Name="DeadMoney.esm" Type="DLC" Guid="F88C19B7-7E4E-4EE0-947D-8E94BE0B17A0" Checksum="ed361d9945e3c3a6" />
-        <Plugin Name="HonestHearts.esm" Type="DLC" Guid="3D5D1E30-059F-4424-A3E2-131E2A77742B" Checksum="bd13d3b8e473a868" />
-        <Plugin Name="OldWorldBlues.esm" Type="DLC" Guid="B2E8C4DC-1527-4EBC-BD31-15B1B5CFCA7D" Checksum="8985cb45da83dc70" />
-        <Plugin Name="LonesomeRoad.esm" Type="DLC" Guid="7AD0D1C1-5D5E-46CF-BEB4-C8E07D8C05A7" Checksum="938a5f88661aef3b" />
-        <Plugin Name="CaravanPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="32457a3d5d0670b5" />
-        <Plugin Name="ClassicPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="28faff8f00849e45"/>
-        <Plugin Name="MercenaryPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="69987927955477d4" />
-        <Plugin Name="TribalPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9" Checksum="310ccb553690211c" />
-        <Plugin Name="GunRunnersArsenal.esm" Type="DLC" Guid="BC918626-568B-4A03-8722-BCD653558850" Checksum="0c17b8ae64184d7e" />
-        <Plugin Name="FalloutNV_lang.esp" Type="Localization" Guid="1E2AF687-B7B7-487D-AE8B-20597C45BFB2" />
+        <Plugin Name="DeadMoney.esm" Type="DLC" Guid="F88C19B7-7E4E-4EE0-947D-8E94BE0B17A0"
+                Checksum="ed361d9945e3c3a6"/>
+        <Plugin Name="HonestHearts.esm" Type="DLC" Guid="3D5D1E30-059F-4424-A3E2-131E2A77742B"
+                Checksum="bd13d3b8e473a868"/>
+        <Plugin Name="OldWorldBlues.esm" Type="DLC" Guid="B2E8C4DC-1527-4EBC-BD31-15B1B5CFCA7D"
+                Checksum="8985cb45da83dc70"/>
+        <Plugin Name="LonesomeRoad.esm" Type="DLC" Guid="7AD0D1C1-5D5E-46CF-BEB4-C8E07D8C05A7"
+                Checksum="938a5f88661aef3b"/>
+        <Plugin Name="CaravanPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9"
+                Checksum="32457a3d5d0670b5"/>
+        <Plugin Name="ClassicPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9"
+                Checksum="28faff8f00849e45"/>
+        <Plugin Name="MercenaryPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9"
+                Checksum="69987927955477d4"/>
+        <Plugin Name="TribalPack.esm" Type="DLC" Guid="E8F62C3A-12E7-4054-85AC-B702B1C0C8E9"
+                Checksum="310ccb553690211c"/>
+        <Plugin Name="GunRunnersArsenal.esm" Type="DLC" Guid="BC918626-568B-4A03-8722-BCD653558850"
+                Checksum="0c17b8ae64184d7e"/>
+        <Plugin Name="FalloutNV_lang.esp" Type="Localization" Guid="1E2AF687-B7B7-487D-AE8B-20597C45BFB2"/>
     </Plugins>
 </Game>
